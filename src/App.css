@@ -4,16 +4,17 @@
 
 }
 
+/* navbar css*/
 .navbar {
   background-color: rgb(255, 255, 255);
   padding: 0;
-  width: auto;
+  width: 100vw;
   height: 2cm;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   align-items:flex-start;
-  box-shadow: 0 0 10px rgba(39, 39, 39, 0.308);
+  box-shadow: 0 0 5px 2px rgba(0, 0, 0, 0.37);
 
 }
 
@@ -46,9 +47,8 @@
 }
 
 .menu ul li a:hover {
-  color: red;
+  color: rgb(132, 0, 255);
   transition: 0.6s ease;
-
 }
 
 .logo {
@@ -78,67 +78,93 @@
 .login p {
   font-size: 0.4cm;
   font-weight: 500;
-  margin-top: 10px;
+  cursor: pointer;
+  
 }
 
 .login:hover {
-  color: red
+  color:rgb(132, 0, 255);
+}
+
+
+
+
+/* content css*/
+
+
+.headingtext{
+  font-weight: 500;
+  transform: translateY(80px);
+  margin-left: 5vw;
 }
 
 .containers {
-  width: auto;
-  height: 14cm;
-  margin: 1.5cm;
+  width: 100vw;
+  height: 70vh;
+  margin-top: 80px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
 
-.containers h1 {
-  font-weight: 500;
-}
 
 .slider {
 
-  margin: 1cm 0cm;
-  height: 11cm;
-  width: auto;
+  height: 60vh;
+  width: 90vw;
   display: flex;
-  flex-direction: row;
-
-
+  
+}
+.abc:hover{
+  width: 60vw;
 }
 
+.abc:hover~.mobility{
+  width: 30vw;
 
+}
+.abc:hover~.drills{
+  width: 30vw;
 
-
-.abc:hover {
-  width: 15cm;
 }
 
 .abc:hover>i {
   display: block;
 }
+.drills:hover>i{
+  display: block;
+}
 
 .strength {
-  background: linear-gradient(rgba(0, 0, 0, 0.327), rgba(0, 0, 0, 0.3)), url(../public/strength.jpg);
-  border-radius: 15px 0px 0px 15px;
+  background: linear-gradient(rgba(0, 0, 0, 0.327), rgba(0, 0, 0, 0.3)), url(../src/one.jpg);
+  border-radius: 10px 0px 0px 10px;
 }
 
 .mobility {
-  background: linear-gradient(rgba(0, 0, 0, 0.327), rgba(0, 0, 0, 0.3)), url(../public/mobility.jpg);
+  background: linear-gradient(rgba(0, 0, 0, 0.327), rgba(0, 0, 0, 0.3)), url(../src/one2.jpg);
 }
 
-.drills {
-  background: linear-gradient(rgba(0, 0, 0, 0.327), rgba(0, 0, 0, 0.3)), url(../public/drillss.jpg);
-  border-radius: 0px 15px 15px 0px;
-}
-.abc{
-  width: 11cm;
-  height: 100%;
+.drills{
+  background: linear-gradient(rgba(0, 0, 0, 0.327), rgba(0, 0, 0, 0.3)), url(../src/one3.jpg);
+  border-radius: 0px 10px 10px 0px;
+  width: 60vw;
+  height: 60vh;
   background-size:cover;
   background-repeat:no-repeat;
-  transition: 0.4s ease-out;
+  
 }
 
-.abc h5 {
+.abc{
+ 
+  width: 30vw;
+  height: 60vh;
+  background-size:cover;
+  background-repeat:no-repeat;
+  transition: 0.3s ease-out;
+}
+
+.abc ,.drills h5 {
   color: white;
   padding: 20px 30px;
   text-transform: uppercase;
@@ -149,15 +175,20 @@
 .abc i {
   position: relative;
   float: right;
-  top: -45px;
-  right: 30px;
+  top: -25px;
+  right: 10px;
   display: none;
   color: white;
   font-size: 0.5cm;
   transition: 0.4s ease;
 }
-
-.abc i:hover {
-  color: rgb(7, 7, 7);
-  transform: scale(120%);
+.drills i{
+  position: relative;
+  float: right;
+  top: -45px;
+  right: 35px;
+  display: none;
+  color: white;
+  font-size: 0.5cm;
+  transition: 0.4s ease;
 }
